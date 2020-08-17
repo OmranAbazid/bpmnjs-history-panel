@@ -1,0 +1,40 @@
+html,
+body,
+#root,
+.App,
+.container {
+  height: 100%;
+  width: 100%;
+  min-width: 100%;
+  padding: 0;
+  margin: 0;
+
+  .history {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 0;
+    min-width: 300px;
+    overflow: scroll;
+    z-index: 100000;
+
+    ul {
+      height: 300px;
+      overflow: scroll;
+      border: 1px solid #ddd;
+    }
+
+    li.list-group-item {
+      cursor: pointer;
+      min-width: 200px;
+    }
+
+    .card-body > .list-group-item:last-of-type {
+      margin-bottom: 10px;
+    }
+  }
+
+  .bjs-powered-by {
+    display: none;
+  }
+}
