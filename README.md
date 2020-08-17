@@ -1,3 +1,16 @@
+
+# bpmnjs history panel
+
+A panel to traverse the history of your created bpmn diagram, it allows to easily go back to a previous state of the diagram and create snapshots when needed.
+
+![](screenshot.gif)
+
+## current limitation
+Since this was a hackdays project, it is just a working prototype and it has the following issues: 
+- It cannot be used as a camunda modeler plugin currently
+- The history is saved by creating snapshots of the xml which is not ideal for performance, ideally the camandstack should be extended to handle that
+- Ideally, the panel stays persisted after refreshing
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
